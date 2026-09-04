@@ -39,7 +39,7 @@ deploy:
         port: ${{ secrets.PORT }}
         script: |
           eval "$(ssh-agent -s)"
-          ssh-add ~/.ssh/<<ssh-praktikan63>>
+          ssh-add ~/.ssh/ssh-praktikan63
           echo "Cek folder project";
           [ ! -d "${HOME}/senpro/538251/modul02/senpro-github-action/" ] &&
             {
